@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8A3FFB632CE3CAAC007CE20F /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8A3FFB622CE3CAAC007CE20F /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8AD0E6992CD0DB7E00413414 /* DiscordApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscordApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,16 +27,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3FFB632CE3CAAC007CE20F /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A3FFB612CE3CA92007CE20F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8AD0E6902CD0DB7E00413414 = {
 			isa = PBXGroup;
 			children = (
 				8AD0E69B2CD0DB7E00413414 /* DiscordApp */,
+				8A3FFB612CE3CA92007CE20F /* Frameworks */,
 				8AD0E69A2CD0DB7E00413414 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +78,7 @@
 			);
 			name = DiscordApp;
 			packageProductDependencies = (
+				8A3FFB622CE3CAAC007CE20F /* Supabase */,
 			);
 			productName = DiscordApp;
 			productReference = 8AD0E6992CD0DB7E00413414 /* DiscordApp.app */;
@@ -94,6 +108,9 @@
 			);
 			mainGroup = 8AD0E6902CD0DB7E00413414;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8A3FFB5E2CE3BF6C007CE20F /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8AD0E69A2CD0DB7E00413414 /* Products */;
 			projectDirPath = "";
@@ -322,6 +339,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A3FFB5E2CE3BF6C007CE20F /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A3FFB622CE3CAAC007CE20F /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A3FFB5E2CE3BF6C007CE20F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8AD0E6912CD0DB7E00413414 /* Project object */;
 }
